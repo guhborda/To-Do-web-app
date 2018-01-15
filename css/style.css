@@ -1,0 +1,147 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.clear{
+	clear: both;
+}
+
+.app{
+	width: 100%;
+	height: 100%;
+	background-color: #808080;
+}
+.container{
+	max-width: 960px;
+	height: 600px;
+}
+
+.form-group{
+	margin-bottom: 0px;
+}
+
+button.add_task {
+	transition: all .3s ease;
+}
+
+button.add_task:active{
+	transform: rotate(-125deg);
+}
+.item.notask{
+	height: 50px;
+	background-color: #f96332;
+	border-radius: 5px;
+	color:white;
+}
+
+.item.notask span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.item{
+	position: relative;
+	width: 100%;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.todo .complete ._content{
+	background-color: #bdbdbd;
+	
+}
+.todo .complete ._content span{
+	text-decoration: line-through;
+}
+
+.todo .complete ._options .done{
+	background-color: #66bb6a;
+}
+
+._date{
+text-align: center;
+vertical-align: middle;
+height: 50px;
+background-color: #f96332;
+display: inline-block;
+position: absolute;
+left: -5px;
+border-radius: 5px 0px 0px 5px;
+color: white;
+z-index:99;
+width: 20%;
+}
+._date span{
+	position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    font-size: 12px;
+}
+._date span span{
+	position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    font-size: 12px;
+}
+._content{
+	display: inline-block;
+    background: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+
+}
+._content span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+._options{
+    position: absolute;
+    display: inline-block;
+    right: 90px;
+    top: 50%;
+    height: 50px;
+    transform: translateY(-50%);
+}
+._options .opt{
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+	width: 20px;
+	height: 30px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+}
+
+._options .opt i{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+._options .delete{
+left: 15px;
+
+}
+._options .done{
+	left: 50px;
+	
+}
+
+._options .delete:hover{
+	background-color: #ef5350;
+}
+
+._options .done:hover{
+	background-color: #66bb6a;
+}
